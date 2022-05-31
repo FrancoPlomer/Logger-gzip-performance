@@ -1,9 +1,3 @@
-#Modo cluster nativo:
-node server.js --modo cluster --puerto 8080
-
-#Modo cluster:
-node server.js --modo cluster
-
 #Modo fork
 npm start
 
@@ -23,7 +17,7 @@ npm stop
 node --prof server.js
 
 #Test de carga con artillery sobre info
-artillery quick --count 50 -n 20 "http://localhost:8080/info" > result_bloq.txt
+artillery quick --count 50 -n 20 "http://localhost:8080/info" > ./loggers/result_bloq.txt
 
 #Generar grafico flama interactivo
 0x server.js

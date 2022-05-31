@@ -38,7 +38,7 @@ formAleatory.addEventListener("submit", async (e) => {
 })
 formInfo.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const systemData = await fetch('http://localhost:8080/info', {
+    const systemData = await fetch('http://localhost:8080/api/info', {
         method: 'GET',
     }).then((response) => {
         return(response.json())

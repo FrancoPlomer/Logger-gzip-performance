@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node benchmark.js",
+    "test": "node ./modules/benchmark.js",
     "start": "node ./server.js",
     "stop": "pm2 kill"
   },
